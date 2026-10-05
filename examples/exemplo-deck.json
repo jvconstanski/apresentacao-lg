@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "titulo": "Nova rede de ônibus · proposta técnica (exemplo)",
+    "tema": "nova-rede-de-onibus-exemplo",
+    "data": "Outubro de 2026",
+    "rodape": "Proposta técnica · Nova rede de ônibus",
+    "publico": "Equipe técnica da Secretaria Municipal de Mobilidade",
+    "objetivo": "Aprovar a contratação do estudo de reestruturação da rede"
+  },
+  "slides": [
+    {
+      "layout": "capa",
+      "rotulo": "Proposta técnica · Secretaria Municipal de Mobilidade",
+      "titulo": "Nova rede de ônibus a partir de quem usa cada linha",
+      "subtitulo": "Diagnóstico, desenho da rede e acompanhamento da implantação",
+      "local": "Curitiba/PR",
+      "notas": "Deck de exemplo da skill. Todo número deste arquivo é fictício e está marcado como [DADO: exemplo]."
+    },
+    {
+      "layout": "afirmacao",
+      "rotulo": "Ponto de partida",
+      "titulo": "A rede atual foi desenhada para uma cidade que **já mudou**",
+      "texto": "Linhas criadas em épocas diferentes se sobrepõem no centro e deixam os bairros novos com pouca oferta. [DADO: exemplo]"
+    },
+    {
+      "layout": "secao",
+      "titulo": "Como a rede funciona hoje",
+      "descricao": "Passageiros, viagens e custos de cada linha, a partir da bilhetagem eletrônica e do GPS da frota."
+    },
+    {
+      "layout": "kpis",
+      "rotulo": "Diagnóstico",
+      "titulo": "A demanda caiu mais rápido do que a oferta de viagens",
+      "itens": [
+        {"valor": "−18%", "rotulo": "passageiros por dia útil", "legenda": "Entre 2019 e 2025 [DADO: exemplo]", "destaque": true},
+        {"valor": "−4%", "rotulo": "viagens programadas", "legenda": "No mesmo período [DADO: exemplo]"},
+        {"valor": "R$ 6,10", "rotulo": "custo por passageiro", "legenda": "Média da rede em 2025 [DADO: exemplo]"}
+      ],
+      "fonte": "Bilhetagem eletrônica e programação operacional [DADO: exemplo]"
+    },
+    {
+      "layout": "grafico-linha",
+      "rotulo": "Demanda",
+      "titulo": "Os passageiros por dia útil não voltaram ao nível de 2019",
+      "subtitulo": "Média de passageiros transportados por dia útil, em milhares",
+      "categorias": ["2019", "2020", "2021", "2022", "2023", "2024", "2025"],
+      "series": [
+        {"nome": "Passageiros por dia útil", "valores": [212, 118, 141, 163, 170, 173, 174]}
+      ],
+      "sufixo": " mil",
+      "fonte": "Bilhetagem eletrônica, média dos dias úteis [DADO: exemplo]"
+    },
+    {
+      "layout": "grafico-barras",
+      "rotulo": "Concentração",
+      "titulo": "Quatro linhas levam quase metade dos passageiros da rede",
+      "subtitulo": "Passageiros por dia útil, em milhares, nas oito linhas mais usadas",
+      "orientacao": "horizontal",
+      "categorias": ["Linha 101 · Centro e Bairro Norte", "Linha 204 · Terminal Sul", "Linha 310 · Avenida principal", "Linha 115 · Hospital e Rodoviária", "Linha 402 · Bairro Leste", "Linha 520 · Distrito industrial", "Linha 233 · Jardim Oeste", "Linha 118 · Universidade"],
+      "series": [
+        {"nome": "Passageiros por dia útil", "valores": [24.1, 21.6, 18.9, 15.2, 9.8, 8.1, 6.4, 5.2]}
+      ],
+      "destaque": [0, 1, 2, 3],
+      "casas": 1,
+      "sufixo": " mil",
+      "fonte": "Bilhetagem eletrônica, outubro de 2025 [DADO: exemplo]"
+    },
+    {
+      "layout": "grafico-donut",
+      "rotulo": "Custo",
+      "titulo": "Pessoal e combustível respondem por 71% do custo da operação",
+      "itens": [
+        {"rotulo": "Pessoal da operação", "valor": 46},
+        {"rotulo": "Combustível", "valor": 25},
+        {"rotulo": "Manutenção e peças", "valor": 12},
+        {"rotulo": "Depreciação e remuneração do capital", "valor": 11},
+        {"rotulo": "Outros custos", "valor": 6}
+      ],
+      "centro": {"valor": "71%", "rotulo": "pessoal e combustível"},
+      "fonte": "Planilha de custos da operação, 2025 [DADO: exemplo]"
+    },
+    {
+      "layout": "tabela",
+      "rotulo": "Desempenho por linha",
+      "titulo": "Onde há menos passageiros por quilômetro, o custo por passageiro quase triplica",
+      "colunas": ["Linha", "Passageiros por dia", "Km por dia", "Passageiros por km", "Custo por passageiro"],
+      "linhas": [
+        ["101 · Centro e Bairro Norte", "24.100", "3.420", "7,05", "R$ 4,20"],
+        ["204 · Terminal Sul", "21.600", "3.380", "6,39", "R$ 4,60"],
+        ["310 · Avenida principal", "18.900", "3.150", "6,00", "R$ 4,90"],
+        ["520 · Distrito industrial", "8.100", "2.940", "2,76", "R$ 10,70"],
+        ["233 · Jardim Oeste", "6.400", "2.610", "2,45", "R$ 12,10"]
+      ],
+      "destaque_linha": 4,
+      "fonte": "Bilhetagem e GPS da frota, outubro de 2025 [DADO: exemplo]"
+    },
+    {
+      "layout": "secao",
+      "titulo": "O que muda com a nova rede",
+      "descricao": "Linhas troncais nos corredores de maior demanda e linhas alimentadoras ligadas aos terminais."
+    },
+    {
+      "layout": "comparativo",
+      "rotulo": "Hoje e proposta",
+      "titulo": "A nova rede troca linhas sobrepostas por integração nos terminais",
+      "esquerda": {
+        "rotulo": "Hoje",
+        "titulo": "Rede radial",
+        "itens": [
+          "Quase todas as linhas passam pelo centro",
+          "Bairros novos atendidos por linhas longas e com pouca frequência",
+          "Sem integração tarifária entre as linhas [DADO: exemplo]"
+        ]
+      },
+      "direita": {
+        "rotulo": "Proposta",
+        "titulo": "Rede tronco-alimentadora",
+        "itens": [
+          "Duas linhas troncais nos corredores de maior demanda",
+          "Linhas alimentadoras curtas, ligadas aos terminais",
+          "Integração tarifária nos terminais e nas estações de transferência"
+        ]
+      }
+    },
+    {
+      "layout": "rede",
+      "rotulo": "Desenho preliminar",
+      "titulo": "Dois eixos troncais e alimentadoras que chegam aos terminais",
+      "texto": "Traçado ilustrativo para discutir com a equipe técnica. O desenho final sai do estudo de demanda.",
+      "nos": [
+        {"id": "TN", "rotulo": "Terminal Norte", "x": 5, "y": 0, "tipo": "terminal"},
+        {"id": "P1", "x": 5, "y": 2},
+        {"id": "C", "rotulo": "Centro", "x": 5, "y": 4, "tipo": "terminal", "rotulo_pos": "abaixo"},
+        {"id": "P2", "x": 7, "y": 6},
+        {"id": "TS", "rotulo": "Terminal Sul", "x": 7, "y": 8, "tipo": "terminal", "rotulo_pos": "esquerda"},
+        {"id": "TO", "rotulo": "Terminal Oeste", "x": 0, "y": 4, "tipo": "terminal", "rotulo_pos": "acima"},
+        {"id": "P3", "x": 2, "y": 4},
+        {"id": "P4", "x": 8, "y": 4},
+        {"id": "TL", "rotulo": "Terminal Leste", "x": 10, "y": 2, "tipo": "terminal"},
+        {"id": "A2", "x": 9, "y": 8},
+        {"id": "BL", "rotulo": "Bairro Leste", "x": 11, "y": 6, "tipo": "chegada", "rotulo_pos": "acima"}
+      ],
+      "linhas": [
+        {"nome": "Troncal Norte-Sul", "cor": "azul", "nos": ["TN", "P1", "C", "P2", "TS"]},
+        {"nome": "Troncal Leste-Oeste", "cor": "grafite", "nos": ["TO", "P3", "C", "P4", "TL"]},
+        {"nome": "Alimentadora Bairro Leste", "cor": "cinza", "nos": ["TS", "A2", "BL"]}
+      ],
+      "escala": "1 km (ilustrativo)"
+    },
+    {
+      "layout": "pilares",
+      "rotulo": "Critérios",
+      "titulo": "Três critérios orientam o desenho da nova rede",
+      "texto": "Cada alternativa de traçado é comparada pelos três, com as premissas abertas para a secretaria conferir.",
+      "itens": [
+        {"titulo": "Demanda medida", "texto": "Origem e destino das viagens, a partir da bilhetagem e de pesquisa embarcada."},
+        {"titulo": "Tempo de viagem", "texto": "Tempo de porta a porta do passageiro, com espera e transferência incluídas."},
+        {"titulo": "Custo da operação", "texto": "Frota, quilometragem e equipe necessárias, com o reflexo calculado na tarifa."}
+      ]
+    },
+    {
+      "layout": "processo",
+      "rotulo": "Como trabalhamos",
+      "titulo": "O trabalho segue quatro etapas, cada uma aprovada antes da próxima",
+      "etapas": [
+        {"titulo": "Diagnóstico técnico", "texto": "Linhas, passageiros, custos e contrato, como funcionam hoje."},
+        {"titulo": "Desenho da rede", "texto": "Traçados, frequências e integração entre linhas e tarifas."},
+        {"titulo": "Validação com a secretaria", "texto": "Cenários comparados e ajustes antes da decisão final."},
+        {"titulo": "Implementação acompanhada", "texto": "Monitoramento na rua, controle da frota e treinamento das equipes."}
+      ]
+    },
+    {
+      "layout": "linha-do-tempo",
+      "rotulo": "Cronograma",
+      "titulo": "Da contratação à nova rede na rua em dez meses",
+      "marcos": [
+        {"data": "Mês 1", "titulo": "Levantamento de dados", "texto": "Bilhetagem, GPS, contrato e pesquisa embarcada."},
+        {"data": "Mês 3", "titulo": "Diagnóstico entregue", "texto": "Relatório com a situação atual de cada linha."},
+        {"data": "Mês 5", "titulo": "Nova rede proposta", "texto": "Cenários comparados e recomendação explicada."},
+        {"data": "Mês 7", "titulo": "Rede aprovada", "texto": "Ajustes da secretaria e documentação final."},
+        {"data": "Mês 10", "titulo": "Nova rede na rua", "texto": "Implantação acompanhada e primeiros indicadores."}
+      ],
+      "fonte": "Prazos estimados para uma rede deste porte [DADO: exemplo]"
+    },
+    {
+      "layout": "citacao",
+      "texto": "Um bom transporte público começa em decisões bem calculadas.",
+      "autor": "LG Mobilidade Urbana",
+      "fonte": "Site institucional, página Quem somos"
+    },
+    {
+      "layout": "topicos",
+      "rotulo": "Entregas",
+      "titulo": "A secretaria recebe os cálculos, não só a conclusão",
+      "itens": [
+        "Relatório técnico com os cenários comparados e a recomendação explicada",
+        "Planilha com todos os cálculos, para a equipe da secretaria conferir",
+        "Lista das premissas e das fontes de cada dado usado",
+        "Programação de horários da nova rede, documentada linha a linha"
+      ],
+      "nota": {
+        "rotulo": "Independência técnica",
+        "texto": "A LG não tem vínculo comercial com fornecedores de equipamentos ou sistemas. A recomendação segue o que os dados mostram."
+      }
+    },
+    {
+      "layout": "encerramento",
+      "titulo": "Próximo passo: conferir os dados de partida com a equipe da secretaria",
+      "texto": "Uma conversa técnica para entender os dados disponíveis, o prazo e as limitações.",
+      "proximo_passo": "Agendar a conversa técnica",
+      "contato": [
+        "Rua Bom Jesus, 212, Juvevê, Curitiba/PR",
+        "[DADO: validar · e-mail oficial]",
+        "[DADO: validar · telefone oficial]"
+      ]
+    }
+  ]
+}

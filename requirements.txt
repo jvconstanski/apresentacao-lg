@@ -1,0 +1,7 @@
+# Skill apresentacao-lg · Python 3.10 ou mais novo
+# Instalar:  pip install -r requirements.txt
+# Depois:    python -m playwright install chromium
+python-pptx>=1.0.2
+Pillow>=10.0
+playwright>=1.45
+pypdf>=4.0
